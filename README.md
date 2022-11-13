@@ -137,7 +137,7 @@ Widget Setup
 |Run     UMETA(DisplayName = "Run"),    			| CharAnimState = Run         |
 |Patrol UMETA(DisplayName = "Patrol"),    			| CharAnimState = Patrol      |
 |Jump   UMETA(DisplayName = "Jump"),      			| CharAnimState = Jump        |
-|Attack UMETA(DisplayName = "Attack"),|'Isn't this fun?'        | CharAnimState = Attack      |
+|Attack UMETA(DisplayName = "Attack"),			        | CharAnimState = Attack      |
 |Pause UMETA(DisplayName = "Pause"),     			| CharAnimState = Pause       |
 |Chase UMETA(DisplayName = "Chase"),  				| CharAnimState = Chase       |
 |IsAttacked UMETA(DisplayName = "IsAttacked") ,     		| CharAnimState = IsAttacked  |
