@@ -364,10 +364,11 @@ Widget Setup
 |bool CharacterIsUnSelectable = true;				|-- is en-dash, --- is em-dash|
 
 	
-|Functions (BlueprintCallable)                  				|Note                         |
-|-------------------------------------------------------------------------------|-----------------------------|
-|void KillUnitBase(AUnitBase* UnitBase);     					|'Isn't this fun?'            |
-|void OnUnitDetected(const TArray<AActor*>& DetectedUnits);     		|'Isn't this fun?'            |
-|void RotateToAttackUnit(AUnitBase* AttackingUnit, AUnitBase* UnitToAttack);  	|'Isn't this fun?'            |
-|void UnitControlStateMachine(float DeltaSeconds);  				|'Isn't this fun?'            |
+|Functions (BlueprintCallable)                  				|Note                         	|
+|-------------------------------------------------------------------------------|-------------------------------|
+|FVector2D GetMousePos2D();    							|'Isn't this fun?'            	|
+|void SetUnitSelected(AUnitBase* Unit);    					|'Isn't this fun?'            	|
+|void DeselectAllUnits();  	|'Isn't this fun?'            			|'Isn't this fun?'            	|
+|void ControllDirectionToMouse(AActor* SelectedUnits, FHitResult Hit); 		|'Isn't this fun?'            	|
+|bool IsActorInsideRec(FVector InPoint, FVector CuPoint, FVector ALocation);	| Is used for sharper selection |
 	
