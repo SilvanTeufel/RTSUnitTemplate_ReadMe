@@ -130,6 +130,21 @@ Widget Setup
 
 
 # UnitBase
+
+|UnitStates (The Statemachine is in UnitControllerBase)        	|HTML                         |
+|---------------------------------------------------------------|-----------------------------|
+|Idle     UMETA(DisplayName = "Idle")       			|'Isn't this fun?'            |
+|Run     UMETA(DisplayName = "Run"),    			|'Isn't this fun?'            |
+|Patrol UMETA(DisplayName = "Patrol"),    			|'Isn't this fun?'            |
+|Jump   UMETA(DisplayName = "Jump"),      			|'Isn't this fun?'            |
+|Attack UMETA(DisplayName = "Attack"),|'Isn't this fun?'        |'Isn't this fun?'            |
+|Pause UMETA(DisplayName = "Pause"),     			|'Isn't this fun?'            |
+|Chase UMETA(DisplayName = "Chase"),  				|'Isn't this fun?'            |
+|IsAttacked UMETA(DisplayName = "IsAttacked") ,     		|'Isn't this fun?'            |
+|Dead UMETA(DisplayName = "Dead"),   				|'Isn't this fun?'            |
+|None UMETA(DisplayName = "None"),    				|'Isn't this fun?'            |
+
+
 |Properties (EditAnyWhere)                  				|HTML                         |
 |-----------------------------------------------------------------------|-----------------------------|
 |bool IsFriendly = true;         					|'Isn't this fun?'            |
@@ -174,18 +189,18 @@ Widget Setup
 |class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
 |class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
 	
-|Functions (BlueprintReadWrite)                  		|HTML                         |
+|Functions (BlueprintCallable)                  		|HTML                         |
 |---------------------------------------------------------------|-----------------------------|
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
+|void IsAttacked(AActor* AttackingCharacter);       		|'Isn't this fun?'            |
+|void SetWalkSpeed(float Speed);      				|'Isn't this fun?'            |
+|bool SetNextUnitToChase();        				|'Isn't this fun?'            |
+|void SetWaypoint(class AWaypoint* NewNextWaypoint);        	|'Isn't this fun?'            |
+|void SetUnitState( TEnumAsByte<UnitData::EState> NewUnitState);|'Isn't this fun?'            |
+|TEnumAsByte<UnitData::EState> GetUnitState();       		|'Isn't this fun?'            |
+|float GetHealth();       					|'Isn't this fun?'            |
+|void SetHealth(float NewHealth);       			|'Isn't this fun?'            |
+|float GetMaxHealth();      					|'Isn't this fun?'            |
+|void SetSelected();       					|'Isn't this fun?'            |
+|void SetDeselected();      					|'Isn't this fun?'            |
+|void SpawnSelectedIcon();       				|'Isn't this fun?'            |
 
