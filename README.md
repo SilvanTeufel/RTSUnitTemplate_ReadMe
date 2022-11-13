@@ -129,9 +129,9 @@ Widget Setup
 5. Widget Class has to choose a Blueprint (in the Character BP). Or just use the Parent Class like it is.
 
 
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+|ASCII                          |HTML                         |
+|-------------------------------|-----------------------------|
+|`'Isn't this fun?'`            |'Isn't this fun?'            |
+|`"Isn't this fun?"`            |"Isn't this fun?"            |
+|`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 
