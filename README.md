@@ -373,3 +373,23 @@ Widget Setup
 |bool IsActorInsideRec(FVector InPoint, FVector CuPoint, FVector ALocation);	| Is used for sharper selection |
 |void MoveUnitsThroughWayPoints(TArray <AUnitBase*> Units);			| Is used for sharper selection |
 	
+# Projectile
+
+|Properties (BlueprintReadWrite)                  		|Note                         |
+|---------------------------------------------------------------|-----------------------------|
+|AActor* Target;   						|'Isn't this fun?'            |
+|class UCapsuleComponent* TriggerCapsule;			|-- is en-dash, --- is em-dash|
+|UStaticMeshComponent* Mesh;			|-- is en-dash, --- is em-dash|
+|UMaterialInterface* Material;			|-- is en-dash, --- is em-dash|
+|FVector TargetLocation;			|-- is en-dash, --- is em-dash|
+|float Damage;			|-- is en-dash, --- is em-dash|
+|float LifeTime = 0.f;			|-- is en-dash, --- is em-dash|
+|float MaxLifeTime = 2.f;			|-- is en-dash, --- is em-dash|
+|bool IsFriendly = true;			|-- is en-dash, --- is em-dash|
+|float MovementSpeed = 50.f;			|-- is en-dash, --- is em-dash|
+	
+|Functions (BlueprintCallable)                  				|Note                         |
+|-------------------------------------------------------------------------------|-----------------------------|
+|void OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);    					|Gets Triggered when Projectile hits a Target   |
+
+	
