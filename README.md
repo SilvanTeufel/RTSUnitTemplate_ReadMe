@@ -261,7 +261,6 @@ Widget Setup
 |void LockOnUnit(AUnitBase* SelectedActor);      		| Lock Camera on a Unit          |
 |void HideControlWidget();      				| Sets the Control Widget Location        |
 |void ShowControlWidget();     					| Sets the Control Widget Hide Location           |
-|void SetUserWidget(APlayerController* PlayerController);      	|'Isn't this fun?'            |
 	
 	
 # UnitControllerBase
@@ -296,128 +295,127 @@ Widget Setup
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|bool IsShiftPressed = false;		   			|'Isn't this fun?'            |
-|bool AttackToggled = false;					|-- is en-dash, --- is em-dash|
-|bool IsStrgPressed = false;					|-- is en-dash, --- is em-dash|
-|bool IsSpacePressed = false;					|-- is en-dash, --- is em-dash|
-|bool AltIsPressed = false;					|-- is en-dash, --- is em-dash|
-|bool LeftClickIsPressed = false;				|-- is en-dash, --- is em-dash|
-|bool LockCameraToCharacter = true;				|-- is en-dash, --- is em-dash|
-|TArray <AUnitBase*> SelectedUnits;				|-- is en-dash, --- is em-dash|
+|bool IsShiftPressed = false;		   			| Is Triggerd from ControllerBase  |
+|bool AttackToggled = false;					| Is Triggerd from ControllerBase  |
+|bool IsStrgPressed = false;					| Is Triggerd from ControllerBase  |
+|bool IsSpacePressed = false;					| Is Triggerd from ControllerBase  |
+|bool AltIsPressed = false;					| Is Triggerd from ControllerBase  |
+|bool LeftClickIsPressed = false;				| Is Triggerd from ControllerBase  |
+|bool LockCameraToCharacter = true;				| Is Triggerd from ControllerBase  |
+|TArray <AUnitBase*> SelectedUnits;				| Is Triggerd from ControllerBase  |
 	
 |Functions (BlueprintCallable)                  				|Note                         |
 |-------------------------------------------------------------------------------|-----------------------------|
-|void ShiftPressed();			   					|'Isn't this fun?'            |
-|void ShiftReleased();						     		|'Isn't this fun?'            |
-|void LeftClickPressed();						 	|'Isn't this fun?'            |
-|void LeftClickReleased();			 				|'Isn't this fun?'            |
-|void RightClickPressed();			  				|'Isn't this fun?'            |
-|void SpacePressed();				 				|'Isn't this fun?'            |
-|void SpaceReleased();				 				|'Isn't this fun?'            |
-|void APressed();				 				|'Isn't this fun?'            |
-|void AReleased();				 				|'Isn't this fun?'            |
-|void JumpCamera();				 				|'Isn't this fun?'            |
-|void StrgPressed();				 				|'Isn't this fun?'            |
-|void StrgReleased();				 				|'Isn't this fun?'            |
-|void ZoomIn();				 					|'Isn't this fun?'            |
-|void ZoomOut();				 				|'Isn't this fun?'            |
-|void ZoomStop();				 				|'Isn't this fun?'            |
-|void CamLeft();				 				|'Isn't this fun?'            |
-|void CamRight();				 				|'Isn't this fun?'            |
-|void ToggleLockCameraToCharacter();		 				|'Isn't this fun?'            |
-|void TabPressed();				 				|'Isn't this fun?'            |
-|void TabReleased();				 				|'Isn't this fun?'            |
-|void CameraPawnForward();			 				|'Isn't this fun?'            |
-|void CameraPawnBackward();			 				|'Isn't this fun?'            |
-|void CameraPawnLeft();				 				|'Isn't this fun?'            |
-|void CameraPawnRight();			 				|'Isn't this fun?'            |
-|void CameraPawnForwardR();				 			|'Isn't this fun?'            |
-|void CameraPawnBackwardR();				 			|'Isn't this fun?'            |
-|bool IsShiftPressed = false;			 				|'Isn't this fun?'            |
-|bool AttackToggled = false;				 			|'Isn't this fun?'            |
-|bool IsStrgPressed = false;			 				|'Isn't this fun?'            |
-|bool IsSpacePressed = false;				 			|'Isn't this fun?'            |
-|bool AltIsPressed = false;				 			|'Isn't this fun?'            |
-|bool LeftClickIsPressed = false;				 		|'Isn't this fun?'            |
-|bool LockCameraToCharacter = true;			 			|'Isn't this fun?'            |
-|TArray <AUnitBase*> SelectedUnits;			 			|'Isn't this fun?'            |
+|void ShiftPressed();			   					| Is Triggerd from ControllerBase  |
+|void ShiftReleased();						     		| Is Triggerd from ControllerBase  |
+|void LeftClickPressed();						 	| Is Triggerd from ControllerBase  |
+|void LeftClickReleased();			 				| Is Triggerd from ControllerBase  |
+|void RightClickPressed();			  				| Is Triggerd from ControllerBase  |
+|void SpacePressed();				 				| Is Triggerd from ControllerBase  |
+|void SpaceReleased();				 				| Is Triggerd from ControllerBase  |
+|void APressed();				 				| Is Triggerd from ControllerBase  |
+|void AReleased();				 				| Is Triggerd from ControllerBase  |
+|void JumpCamera();				 				| Is Triggerd from ControllerBase  |
+|void StrgPressed();				 				| Is Triggerd from ControllerBase  |
+|void StrgReleased();				 				| Is Triggerd from ControllerBase  |
+|void ZoomIn();				 					| Is Triggerd from ControllerBase  |
+|void ZoomOut();				 				| Is Triggerd from ControllerBase  |
+|void ZoomStop();				 				| Is Triggerd from ControllerBase  |
+|void CamLeft();				 				| Is Triggerd from ControllerBase  |
+|void CamRight();				 				| Is Triggerd from ControllerBase  |
+|void ToggleLockCameraToCharacter();		 				| Is Triggerd from ControllerBase  |
+|void TabPressed();				 				| Is Triggerd from ControllerBase  |
+|void TabReleased();				 				| Is Triggerd from ControllerBase  |
+|void CameraPawnForward();			 				| Is Triggerd from ControllerBase  |
+|void CameraPawnBackward();			 				| Is Triggerd from ControllerBase  |
+|void CameraPawnLeft();				 				| Is Triggerd from ControllerBase  |
+|void CameraPawnRight();			 				| Is Triggerd from ControllerBase  |
+|void CameraPawnForwardR();				 			| Is Triggerd from ControllerBase  |
+|void CameraPawnBackwardR();				 			| Is Triggerd from ControllerBase  |
+|bool IsShiftPressed = false;			 				| Is Triggerd from ControllerBase  |
+|bool AttackToggled = false;				 			| Is Triggerd from ControllerBase  |
+|bool IsStrgPressed = false;			 				| Is Triggerd from ControllerBase  |
+|bool IsSpacePressed = false;				 			| Is Triggerd from ControllerBase  |
+|bool AltIsPressed = false;				 			| Is Triggerd from ControllerBase  |
+|bool LeftClickIsPressed = false;				 		| Is Triggerd from ControllerBase  |
+|bool LockCameraToCharacter = true;			 			| Is Triggerd from ControllerBase  |
+|TArray <AUnitBase*> SelectedUnits;			 			| Is Triggerd from ControllerBase  |
 
 
 # HUDBase
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|bool bSelectFriendly = false;   				|'Isn't this fun?'            |
-|FVector2D InitialPoint;					|-- is en-dash, --- is em-dash|
-|FVector2D CurrentPoint;    					|'Isn't this fun?'            |
-|FVector IPoint = FVector(0.f,0.f, 0.f);			|-- is en-dash, --- is em-dash|
-|FVector CPoint = FVector(0.f,0.f, 0.f);   			|'Isn't this fun?'            |
-|float RectangleScaleSelectionFactor = 0.9;			|-- is en-dash, --- is em-dash|
-|TArray <AUnitBase*> SelectedEnemyUnits;   			|'Isn't this fun?'            |
-|TArray <AUnitBase*> SelectedFriendlyUnits;			|-- is en-dash, --- is em-dash|
-|TArray <AUnitBase*> AllFriendlyUnits;				|-- is en-dash, --- is em-dash|
-|bool CharacterIsUnSelectable = true;				|-- is en-dash, --- is em-dash|
+|bool bSelectFriendly = false;   				| Left Click and holde it gets set to true |
+|FVector2D InitialPoint;					| Used for select and Draw of Rectangle |
+|FVector2D CurrentPoint;    					| Used for select and Draw of Rectangle |
+|FVector IPoint = FVector(0.f,0.f, 0.f);			| Used for better sharpnes is set in ControllerBase |
+|FVector CPoint = FVector(0.f,0.f, 0.f);   			| Used for better sharpnes is set in ControllerBase |
+|float RectangleScaleSelectionFactor = 0.9;			| Only the inner rectangle will select |
+|TArray <AUnitBase*> SelectedFriendlyUnits;			| The selected Units |
+|TArray <AUnitBase*> AllFriendlyUnits;				| All Units which are selectable |
+|bool CharacterIsUnSelectable = true;				| Set to false to make characters unselectable |
 
 	
 |Functions (BlueprintCallable)                  				|Note                         	|
 |-------------------------------------------------------------------------------|-------------------------------|
-|FVector2D GetMousePos2D();    							|'Isn't this fun?'            	|
-|void SetUnitSelected(AUnitBase* Unit);    					|'Isn't this fun?'            	|
-|void DeselectAllUnits();  	|'Isn't this fun?'            			|'Isn't this fun?'            	|
-|void ControllDirectionToMouse(AActor* SelectedUnits, FHitResult Hit); 		|'Isn't this fun?'            	|
-|bool IsActorInsideRec(FVector InPoint, FVector CuPoint, FVector ALocation);	| Is used for sharper selection |
-|void MoveUnitsThroughWayPoints(TArray <AUnitBase*> Units);			| Is used for sharper selection |
+|FVector2D GetMousePos2D();    							| ---           	|
+|void SetUnitSelected(AUnitBase* Unit);    					| ---            	|
+|void DeselectAllUnits();  	|'Isn't this fun?'            			| ---            	|
+|void ControllDirectionToMouse(AActor* SelectedUnits, FHitResult Hit); 		| ---             	|
+|bool IsActorInsideRec(FVector InPoint, FVector CuPoint, FVector ALocation);	| IPoint and CPoint for higher sharpness |
+|void MoveUnitsThroughWayPoints(TArray <AUnitBase*> Units);			| Is called in Tick |
 	
 # Projectile
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|AActor* Target;   						|'Isn't this fun?'            |
-|class UCapsuleComponent* TriggerCapsule;			|-- is en-dash, --- is em-dash|
-|UStaticMeshComponent* Mesh;			|-- is en-dash, --- is em-dash|
-|UMaterialInterface* Material;			|-- is en-dash, --- is em-dash|
-|FVector TargetLocation;			|-- is en-dash, --- is em-dash|
-|float Damage;			|-- is en-dash, --- is em-dash|
-|float LifeTime = 0.f;			|-- is en-dash, --- is em-dash|
-|float MaxLifeTime = 2.f;			|-- is en-dash, --- is em-dash|
-|bool IsFriendly = true;			|-- is en-dash, --- is em-dash|
-|float MovementSpeed = 50.f;			|-- is en-dash, --- is em-dash|
+|AActor* Target;   						| of the Projectile from the Unit    |
+|class UCapsuleComponent* TriggerCapsule;			| to Destroy the Projectile and do dmg, change size in BP!|
+|UStaticMeshComponent* Mesh;					| Choose a Mesh!! |
+|UMaterialInterface* Material;					| Material of the mesh is set in contructor |
+|FVector TargetLocation;					| TargetLocation |
+|float Damage;							| Gets Set in UnitControllerBase |
+|float LifeTime = 0.f;						| Current Life Time|
+|float MaxLifeTime = 2.f;					| After Current Life Time reached Max Life Time Projectile gets destroyed |
+|bool IsFriendly = true;					| Is it from a Friendly or UnFriendly Character |
+|float MovementSpeed = 50.f;					| MovementSpeed of the Projectile |
 	
 |Functions (BlueprintCallable)                  				|Note                        			|
 |-------------------------------------------------------------------------------|-----------------------------------------------|
-|void OnOverlapBegin(class AActor* OtherActor,);    				|Gets Triggered when Projectile hits a Target   |
+|void OnOverlapBegin(class AActor* OtherActor,);    				| Gets Triggered when Projectile hits a Target   |
 
 	
 # SelectedIcon
 
 |Properties (BlueprintReadWrite)  		                 	|Note                         |
 |-----------------------------------------------------------------------|-----------------------------|
-|UStaticMeshComponent* IconMesh;  					|'Isn't this fun?'            |
-|UMaterialInterface* BlueMaterial;	         				|"Isn't this fun?"            |
-|UMaterialInterface* ActionMaterial;			|-- is en-dash, --- is em-dash|
-|UMaterialInstanceDynamic* DynMaterial;		      				|'Isn't this fun?'            |
+|UStaticMeshComponent* IconMesh;  					| Is set in Constructor       |
+|UMaterialInterface* BlueMaterial;	         			| Is set by Function          |
+|UMaterialInterface* ActionMaterial;					| Is set by Function 	      |
+|UMaterialInstanceDynamic* DynMaterial;		      			| ---           	      |
 
 	
 |Functions (BlueprintCallable)                  				|Note                         |
 |-------------------------------------------------------------------------------|-----------------------------|
-|void ChangeMaterialColour(FVector4d Colour);   				|'Isn't this fun?'            |
-|void ChangeMaterialToAction();     						|'Isn't this fun?'            |
+|void ChangeMaterialColour(FVector4d Colour);   				| ---               |
+|void ChangeMaterialToAction();     						| ---               |
 	
 	
 # Waypoint
 
 |Properties (EditAnyWhere + BlueprintReadWrite)                  	|Note                         |
 |-----------------------------------------------------------------------|-----------------------------|
-|AWaypoint* NextWaypoint;	  					|'Isn't this fun?'            |
+|AWaypoint* NextWaypoint;	  					|Used for UnitState Patrol    |
 
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|USceneComponent* Root;  					|'Isn't this fun?'            |
-|UBoxComponent* BoxComponent;					|-- is en-dash, --- is em-dash|
+|USceneComponent* Root;  					| ---             		|
+|UBoxComponent* BoxComponent;					| ---  				|
 	
 |Functions (BlueprintCallable)                  				|Note                         |
 |-------------------------------------------------------------------------------|-----------------------------|
-|void OnPlayerEnter(AActor* OtherActor)						|'Isn't this fun?'            |
+|void OnPlayerEnter(AActor* OtherActor)						| The NextWaypoint of the Character will be set   |
 	
 	
