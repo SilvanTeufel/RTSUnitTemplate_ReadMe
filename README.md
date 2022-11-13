@@ -133,34 +133,33 @@ Widget Setup
 
 |UnitStates (The Statemachine is in UnitControllerBase)        	|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|Idle     UMETA(DisplayName = "Idle")       			|'Isn't this fun?'            |
-|Run     UMETA(DisplayName = "Run"),    			|'Isn't this fun?'            |
-|Patrol UMETA(DisplayName = "Patrol"),    			|'Isn't this fun?'            |
-|Jump   UMETA(DisplayName = "Jump"),      			|'Isn't this fun?'            |
-|Attack UMETA(DisplayName = "Attack"),|'Isn't this fun?'        |'Isn't this fun?'            |
-|Pause UMETA(DisplayName = "Pause"),     			|'Isn't this fun?'            |
-|Chase UMETA(DisplayName = "Chase"),  				|'Isn't this fun?'            |
-|IsAttacked UMETA(DisplayName = "IsAttacked") ,     		|'Isn't this fun?'            |
-|Dead UMETA(DisplayName = "Dead"),   				|'Isn't this fun?'            |
-|None UMETA(DisplayName = "None"),    				|'Isn't this fun?'            |
+|Idle     UMETA(DisplayName = "Idle")       			| CharAnimState = Idle	      |
+|Run     UMETA(DisplayName = "Run"),    			| CharAnimState = Run         |
+|Patrol UMETA(DisplayName = "Patrol"),    			| CharAnimState = Patrol      |
+|Jump   UMETA(DisplayName = "Jump"),      			| CharAnimState = Jump        |
+|Attack UMETA(DisplayName = "Attack"),|'Isn't this fun?'        | CharAnimState = Attack      |
+|Pause UMETA(DisplayName = "Pause"),     			| CharAnimState = Pause       |
+|Chase UMETA(DisplayName = "Chase"),  				| CharAnimState = Chase       |
+|IsAttacked UMETA(DisplayName = "IsAttacked") ,     		| CharAnimState = IsAttacked  |
+|Dead UMETA(DisplayName = "Dead"),   				| CharAnimState = Dead        |
+|None UMETA(DisplayName = "None"),    				| Should not happen	      |
 
 
 |Properties (EditAnyWhere + BlueprintReadWrite)                  	|Note                         |
 |-----------------------------------------------------------------------|-----------------------------|
-|bool IsFriendly = true;         					|'Isn't this fun?'            |
-|float Range = 300.f;           					|"Isn't this fun?"            |
-|float StopChaseAtDistance = 100.f;					|-- is en-dash, --- is em-dash|
-|float MaxRunSpeed = 400.f;        					|'Isn't this fun?'            |
-|float IsAttackedSpeed = 200.f;          				|"Isn't this fun?"            |
-|float RunSpeedScale = 4.f;						|-- is en-dash, --- is em-dash|
-|float StopRunTolerance = 100.f;       					|'Isn't this fun?'            |
-|float StopRunToleranceY = 400.f;           				|"Isn't this fun?"            |
-|float StopChaseAtDistance = 100.f;					|-- is en-dash, --- is em-dash|
-|float AttackDamage = 40.0f;          					|"Isn't this fun?"            |
-|class AWaypoint* NextWaypoint;       					|'Isn't this fun?'            |
-|TEnumAsByte<UnitData::EState> UnitState = UnitData::Idle;		|-- is en-dash, --- is em-dash|
-|TEnumAsByte<UnitData::EState> UnitStatePlaceholder = UnitData::Patrol;	|-- is en-dash, --- is em-dash|
-|class UWidgetComponent* HealthWidgetComp;          			|"Isn't this fun?"            |
+|bool IsFriendly = true;         					| Set false for Enemys	      					|
+|float Range = 300.f;           					| Choose Attack Range         					|
+|float StopChaseAtDistance = 100.f;					| Switches from Chase to Attack if Distance is reached 		|
+|float MaxRunSpeed = 400.f;        					| Unit Max Run Speed          					|
+|float IsAttackedSpeed = 200.f;          				| Slow Down when EnemyUnit is Attacked				|
+|float RunSpeedScale = 4.f;						| Choose to Scale the Speed in "Run" 4 is standard		|
+|float StopRunTolerance = 100.f;       					| Stops when Position is only 100.f away	       		|
+|float StopRunToleranceY = 400.f;           				| Stops if Y-Position is only 400.f away        		|
+|float AttackDamage = 40.0f;          					| The Damage that the Unit Makes when attacking        		|
+|class AWaypoint* NextWaypoint;       					| The Start Waypoint when Unit is in "Patrol"	        	|
+|TEnumAsByte<UnitData::EState> UnitState = UnitData::Idle;		| Choose the Start UnitState. For Enemys it should be Patrol	|
+|TEnumAsByte<UnitData::EState> UnitStatePlaceholder = UnitData::Patrol;	| This is used to Switch the UnitState back from other States	|
+|class UWidgetComponent* HealthWidgetComp;          			| Used for Healthbar Implementation.            |
 |float StopChaseAtDistance = 100.f;					|-- is en-dash, --- is em-dash|
 |float MaxHealth = 120;       						|'Isn't this fun?'            |
 |FVector HealthWidgetCompLocation = FVector (0.f, 0.f, 180.f);          |"Isn't this fun?"            |
