@@ -173,4 +173,19 @@ Widget Setup
 |class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
 |class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
 |class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
+	
+|Functions (BlueprintReadWrite)                  		|HTML                         |
+|---------------------------------------------------------------|-----------------------------|
+|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
+|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
+|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
+|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
+|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
+|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
+|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
+|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
+|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
+|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
+|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
+|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
 
