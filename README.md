@@ -131,7 +131,7 @@ Widget Setup
 
 # UnitBase
 
-|UnitStates (The Statemachine is in UnitControllerBase)        	|HTML                         |
+|UnitStates (The Statemachine is in UnitControllerBase)        	|Note                         |
 |---------------------------------------------------------------|-----------------------------|
 |Idle     UMETA(DisplayName = "Idle")       			|'Isn't this fun?'            |
 |Run     UMETA(DisplayName = "Run"),    			|'Isn't this fun?'            |
@@ -145,7 +145,7 @@ Widget Setup
 |None UMETA(DisplayName = "None"),    				|'Isn't this fun?'            |
 
 
-|Properties (EditAnyWhere)                  				|HTML                         |
+|Properties (EditAnyWhere)                  				|Note                         |
 |-----------------------------------------------------------------------|-----------------------------|
 |bool IsFriendly = true;         					|'Isn't this fun?'            |
 |float Range = 300.f;           					|"Isn't this fun?"            |
@@ -173,7 +173,7 @@ Widget Setup
 |bool DestroyAfterDeath = true;						|-- is en-dash, --- is em-dash|	
 	
 
-|Properties (BlueprintReadWrite)                  		|HTML                         |
+|Properties (BlueprintReadWrite)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
 |float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
 |bool ToggleUnitDetection = false;				|-- is en-dash, --- is em-dash|
@@ -189,7 +189,7 @@ Widget Setup
 |class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
 |class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
 	
-|Functions (BlueprintCallable)                  		|HTML                         |
+|Functions (BlueprintCallable)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
 |void IsAttacked(AActor* AttackingCharacter);       		|'Isn't this fun?'            |
 |void SetWalkSpeed(float Speed);      				|'Isn't this fun?'            |
@@ -206,7 +206,7 @@ Widget Setup
 	
 # CameraBase
 
-|Properties (EditAnyWhere)                  				|HTML                         |
+|Properties (EditAnyWhere)                  				|Note                         |
 |-----------------------------------------------------------------------|-----------------------------|
 |float Margin = 15;       						|'Isn't this fun?'            |
 |int GetViewPortScreenSizesState = 1;         				|"Isn't this fun?"            |
@@ -219,7 +219,7 @@ Widget Setup
 |FVector ControlWidgetHideLocation = FVector(400.f, -2500.0f, -250.0f); |"Isn't this fun?"            |
 
 
-|Properties (BlueprintReadWrite)                  		|HTML                         |
+|Properties (BlueprintReadWrite)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
 |USceneComponent* RootScene;      				|'Isn't this fun?'            |
 |USpringArmComponent* SpringArm;				|-- is en-dash, --- is em-dash|
@@ -243,7 +243,7 @@ Widget Setup
 |float StartTime = 0.f;						|-- is en-dash, --- is em-dash|
 |int CamAngle = 0;						|-- is en-dash, --- is em-dash|
 	
-|Functions (BlueprintCallable)                  		|HTML                         |
+|Functions (BlueprintCallable)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
 |void CreateCameraComp();       				|'Isn't this fun?'            |
 |void SetViewPortScreenSizes(int x);     			|'Isn't this fun?'            |
