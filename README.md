@@ -395,28 +395,16 @@ Widget Setup
 	
 # SelectedIcon
 
-|Properties (EditAnyWhere + BlueprintReadWrite)                  	|Note                         |
+|Properties (BlueprintReadWrite)  		                 	|Note                         |
 |-----------------------------------------------------------------------|-----------------------------|
-|float SightRadius = 1500.0f;   					|'Isn't this fun?'            |
-|float SightAge = 5.0f;		         				|"Isn't this fun?"            |
-|float LoseSightRadius = SightRadius + 1000.0f;				|-- is en-dash, --- is em-dash|
-|float FieldOfView = 360.0f;		      				|'Isn't this fun?'            |
-|float DespawnTime = 1.0f;       					|"Isn't this fun?"            |
-|float PauseDuration = 0.6f;						|-- is en-dash, --- is em-dash|	
-|float AttackDuration = 0.6f;				      		|"Isn't this fun?"            |
-|float IsAttackedDuration = 0.3f;					|"Isn't this fun?"            |
-|float AttackAngleTolerance = 0.f;					|"Isn't this fun?"            |
+|UStaticMeshComponent* IconMesh;  					|'Isn't this fun?'            |
+|UMaterialInterface* BlueMaterial;	         				|"Isn't this fun?"            |
+|UMaterialInterface* ActionMaterial;			|-- is en-dash, --- is em-dash|
+|UMaterialInstanceDynamic* DynMaterial;		      				|'Isn't this fun?'            |
 
-
-|Properties (BlueprintReadWrite)                  		|Note                         |
-|---------------------------------------------------------------|-----------------------------|
-|class UAISenseConfig_Sight* SightConfig;    			|'Isn't this fun?'            |
-|float DistanceToUnitToChase = 0.0f;				|-- is en-dash, --- is em-dash|
 	
 |Functions (BlueprintCallable)                  				|Note                         |
 |-------------------------------------------------------------------------------|-----------------------------|
-|void KillUnitBase(AUnitBase* UnitBase);     					|'Isn't this fun?'            |
-|void OnUnitDetected(const TArray<AActor*>& DetectedUnits);     		|'Isn't this fun?'            |
-|void RotateToAttackUnit(AUnitBase* AttackingUnit, AUnitBase* UnitToAttack);  	|'Isn't this fun?'            |
-|void UnitControlStateMachine(float DeltaSeconds);  				|'Isn't this fun?'            |
+|void ChangeMaterialColour(FVector4d Colour);   				|'Isn't this fun?'            |
+|void ChangeMaterialToAction();     						|'Isn't this fun?'            |
 	
