@@ -371,4 +371,5 @@ Widget Setup
 |void DeselectAllUnits();  	|'Isn't this fun?'            			|'Isn't this fun?'            	|
 |void ControllDirectionToMouse(AActor* SelectedUnits, FHitResult Hit); 		|'Isn't this fun?'            	|
 |bool IsActorInsideRec(FVector InPoint, FVector CuPoint, FVector ALocation);	| Is used for sharper selection |
+|void MoveUnitsThroughWayPoints(TArray <AUnitBase*> Units);			| Is used for sharper selection |
 	
