@@ -204,15 +204,15 @@ Widget Setup
 
 |Properties (EditAnyWhere + BlueprintReadWrite)                  	|Note                         |
 |-----------------------------------------------------------------------|-----------------------------|
-|float Margin = 15;       						|'Isn't this fun?'            |
-|int GetViewPortScreenSizesState = 1;         				|"Isn't this fun?"            |
-|float CamSpeed = 80;							|-- is en-dash, --- is em-dash|
-|float ZoomOutPosition = 20000.f;       				|'Isn't this fun?'            |
-|float ZoomPosition = 1500.f;         					|"Isn't this fun?"            |
-|class UWidgetComponent* ControlWidgetComp;				|-- is en-dash, --- is em-dash|	
-|FRotator ControlWidgetRotation = FRotator(50, 180, 0);       		|"Isn't this fun?"            |
-|FVector ControlWidgetLocation = FVector(400.f, -100.0f, -250.0f);      |"Isn't this fun?"            |
-|FVector ControlWidgetHideLocation = FVector(400.f, -2500.0f, -250.0f); |"Isn't this fun?"            |
+|float Margin = 15;       						| Margin the ScreenSize where Camera-Mouse-Movement gets toggled	|
+|int GetViewPortScreenSizesState = 1;         				| Choose 1 or 2  to set SetViewPortScreenSizes 2 uses GSystemResolution |
+|float CamSpeed = 80;							| Choose the Speed of the Camera					|
+|float ZoomOutPosition = 20000.f;       				| The Position the Camera should stop when Zooming out fast (Press Space)|
+|float ZoomPosition = 1500.f;         					| The Position where Camera should stop when Zooming in again (Standard Position) |
+|class UWidgetComponent* ControlWidgetComp;				| Used when Tab gets pressed to show Control Shortcuts			|	
+|FRotator ControlWidgetRotation = FRotator(50, 180, 0);       		| Change the Rotation of the Control-Widget           |
+|FVector ControlWidgetLocation = FVector(400.f, -100.0f, -250.0f);      | Change the Location of the Control-Widget           |
+|FVector ControlWidgetHideLocation = FVector(400.f, -2500.0f, -250.0f); | Change the Location of the Control-Widget if it is hidden           |
 
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
