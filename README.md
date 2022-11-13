@@ -295,3 +295,54 @@ Widget Setup
 |void OnUnitDetected(const TArray<AActor*>& DetectedUnits);     		|'Isn't this fun?'            |
 |void RotateToAttackUnit(AUnitBase* AttackingUnit, AUnitBase* UnitToAttack);  	|'Isn't this fun?'            |
 |void UnitControlStateMachine(float DeltaSeconds);  				|'Isn't this fun?'            |
+	
+	
+# ControllerBase
+
+|Properties (BlueprintReadWrite)                  		|Note                         |
+|---------------------------------------------------------------|-----------------------------|
+|bool IsShiftPressed = false;		   			|'Isn't this fun?'            |
+|bool AttackToggled = false;					|-- is en-dash, --- is em-dash|
+|bool IsStrgPressed = false;					|-- is en-dash, --- is em-dash|
+|bool IsSpacePressed = false;					|-- is en-dash, --- is em-dash|
+|bool AltIsPressed = false;					|-- is en-dash, --- is em-dash|
+|bool LeftClickIsPressed = false;				|-- is en-dash, --- is em-dash|
+|bool LockCameraToCharacter = true;				|-- is en-dash, --- is em-dash|
+|TArray <AUnitBase*> SelectedUnits;				|-- is en-dash, --- is em-dash|
+	
+|Functions (BlueprintCallable)                  				|Note                         |
+|-------------------------------------------------------------------------------|-----------------------------|
+|void ShiftPressed();			   					|'Isn't this fun?'            |
+|void ShiftReleased();						     		|'Isn't this fun?'            |
+|void LeftClickPressed();						 	|'Isn't this fun?'            |
+|void LeftClickReleased();			 				|'Isn't this fun?'            |
+|void RightClickPressed();			  				|'Isn't this fun?'            |
+|void SpacePressed();				 				|'Isn't this fun?'            |
+|void SpaceReleased();				 				|'Isn't this fun?'            |
+|void APressed();				 				|'Isn't this fun?'            |
+|void AReleased();				 				|'Isn't this fun?'            |
+|void JumpCamera();				 				|'Isn't this fun?'            |
+|void StrgPressed();				 				|'Isn't this fun?'            |
+|void StrgReleased();				 				|'Isn't this fun?'            |
+|void ZoomIn();				 					|'Isn't this fun?'            |
+|void ZoomOut();				 				|'Isn't this fun?'            |
+|void ZoomStop();				 				|'Isn't this fun?'            |
+|void CamLeft();				 				|'Isn't this fun?'            |
+|void CamRight();				 				|'Isn't this fun?'            |
+|void ToggleLockCameraToCharacter();		 				|'Isn't this fun?'            |
+|void TabPressed();				 				|'Isn't this fun?'            |
+|void TabReleased();				 				|'Isn't this fun?'            |
+|void CameraPawnForward();			 				|'Isn't this fun?'            |
+|void CameraPawnBackward();			 				|'Isn't this fun?'            |
+|void CameraPawnLeft();				 				|'Isn't this fun?'            |
+|void CameraPawnRight();			 				|'Isn't this fun?'            |
+|void CameraPawnForwardR();				 			|'Isn't this fun?'            |
+|void CameraPawnBackwardR();				 			|'Isn't this fun?'            |
+|bool IsShiftPressed = false;			 				|'Isn't this fun?'            |
+|bool AttackToggled = false;				 			|'Isn't this fun?'            |
+|bool IsStrgPressed = false;			 				|'Isn't this fun?'            |
+|bool IsSpacePressed = false;				 			|'Isn't this fun?'            |
+|bool AltIsPressed = false;				 			|'Isn't this fun?'            |
+|bool LeftClickIsPressed = false;				 		|'Isn't this fun?'            |
+|bool LockCameraToCharacter = true;			 			|'Isn't this fun?'            |
+|TArray <AUnitBase*> SelectedUnits;			 			|'Isn't this fun?'            |
