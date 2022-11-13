@@ -416,6 +416,6 @@ Widget Setup
 	
 |Functions (BlueprintCallable)                  				|Note                         |
 |-------------------------------------------------------------------------------|-----------------------------|
-|void OnPlayerEnter(AActor* OtherActor)						| The NextWaypoint of the Character will be set   |
+|void OnPlayerEnter(AActor* OtherActor)						| The NextWaypoint of the Unit will be set   |
 	
 	
