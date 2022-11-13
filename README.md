@@ -346,3 +346,28 @@ Widget Setup
 |bool LeftClickIsPressed = false;				 		|'Isn't this fun?'            |
 |bool LockCameraToCharacter = true;			 			|'Isn't this fun?'            |
 |TArray <AUnitBase*> SelectedUnits;			 			|'Isn't this fun?'            |
+
+
+# HUDBase
+
+|Properties (BlueprintReadWrite)                  		|Note                         |
+|---------------------------------------------------------------|-----------------------------|
+|bool bSelectFriendly = false;   				|'Isn't this fun?'            |
+|FVector2D InitialPoint;					|-- is en-dash, --- is em-dash|
+|FVector2D CurrentPoint;    					|'Isn't this fun?'            |
+|FVector IPoint = FVector(0.f,0.f, 0.f);			|-- is en-dash, --- is em-dash|
+|FVector CPoint = FVector(0.f,0.f, 0.f);   			|'Isn't this fun?'            |
+|float RectangleScaleSelectionFactor = 0.9;			|-- is en-dash, --- is em-dash|
+|TArray <AUnitBase*> SelectedEnemyUnits;   			|'Isn't this fun?'            |
+|TArray <AUnitBase*> SelectedFriendlyUnits;			|-- is en-dash, --- is em-dash|
+|TArray <AUnitBase*> AllFriendlyUnits;				|-- is en-dash, --- is em-dash|
+|bool CharacterIsUnSelectable = true;				|-- is en-dash, --- is em-dash|
+
+	
+|Functions (BlueprintCallable)                  				|Note                         |
+|-------------------------------------------------------------------------------|-----------------------------|
+|void KillUnitBase(AUnitBase* UnitBase);     					|'Isn't this fun?'            |
+|void OnUnitDetected(const TArray<AActor*>& DetectedUnits);     		|'Isn't this fun?'            |
+|void RotateToAttackUnit(AUnitBase* AttackingUnit, AUnitBase* UnitToAttack);  	|'Isn't this fun?'            |
+|void UnitControlStateMachine(float DeltaSeconds);  				|'Isn't this fun?'            |
+	
