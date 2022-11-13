@@ -408,3 +408,21 @@ Widget Setup
 |void ChangeMaterialColour(FVector4d Colour);   				|'Isn't this fun?'            |
 |void ChangeMaterialToAction();     						|'Isn't this fun?'            |
 	
+	
+# Waypoint
+
+|Properties (EditAnyWhere + BlueprintReadWrite)                  	|Note                         |
+|-----------------------------------------------------------------------|-----------------------------|
+|AWaypoint* NextWaypoint;	  					|'Isn't this fun?'            |
+
+
+|Properties (BlueprintReadWrite)                  		|Note                         |
+|---------------------------------------------------------------|-----------------------------|
+|USceneComponent* Root;  					|'Isn't this fun?'            |
+|UBoxComponent* BoxComponent;					|-- is en-dash, --- is em-dash|
+	
+|Functions (BlueprintCallable)                  				|Note                         |
+|-------------------------------------------------------------------------------|-----------------------------|
+|void OnPlayerEnter(AActor* OtherActor)						|'Isn't this fun?'            |
+	
+	
