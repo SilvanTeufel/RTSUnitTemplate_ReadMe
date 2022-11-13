@@ -203,4 +203,50 @@ Widget Setup
 |void SetSelected();       					|'Isn't this fun?'            |
 |void SetDeselected();      					|'Isn't this fun?'            |
 |void SpawnSelectedIcon();       				|'Isn't this fun?'            |
+	
+# CameraBase
+
+|Properties (EditAnyWhere)                  				|HTML                         |
+|-----------------------------------------------------------------------|-----------------------------|
+|float Margin = 15;       						|'Isn't this fun?'            |
+|int GetViewPortScreenSizesState = 1;         				|"Isn't this fun?"            |
+|float CamSpeed = 80;							|-- is en-dash, --- is em-dash|
+|float ZoomOutPosition = 20000.f;       				|'Isn't this fun?'            |
+|float ZoomPosition = 1500.f;         					|"Isn't this fun?"            |
+|FRotator ControlWidgetRotation = FRotator(50, 180, 0);       		|"Isn't this fun?"            |
+|FVector ControlWidgetLocation = FVector(400.f, -100.0f, -250.0f);      |"Isn't this fun?"            |
+|FVector ControlWidgetHideLocation = FVector(400.f, -2500.0f, -250.0f); |"Isn't this fun?"            |
+
+
+|Properties (BlueprintReadWrite)                  		|HTML                         |
+|---------------------------------------------------------------|-----------------------------|
+|USceneComponent* RootScene;      				|'Isn't this fun?'            |
+|USpringArmComponent* SpringArm;				|-- is en-dash, --- is em-dash|
+|Rotator SpringArmRotator = FRotator(-50, 0, 0);     					|'Isn't this fun?'            |
+|UCameraComponent* CameraComp;          			|"Isn't this fun?"            |
+|APlayerController* PC;						|-- is en-dash, --- is em-dash|
+|void SetViewPortScreenSizes(int x);				|-- is en-dash, --- is em-dash|
+|int32 RunLocationArrayIterator;				|-- is en-dash, --- is em-dash|
+|FVector RunLocation;						|-- is en-dash, --- is em-dash|
+|class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
+|class AProjectile* Projectile;				|-- is en-dash, --- is em-dash|
+|class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
+|class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
+|class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
+	
+|Functions (BlueprintCallable)                  		|HTML                         |
+|---------------------------------------------------------------|-----------------------------|
+|void IsAttacked(AActor* AttackingCharacter);       		|'Isn't this fun?'            |
+|void SetWalkSpeed(float Speed);      				|'Isn't this fun?'            |
+|bool SetNextUnitToChase();        				|'Isn't this fun?'            |
+|void SetWaypoint(class AWaypoint* NewNextWaypoint);        	|'Isn't this fun?'            |
+|void SetUnitState( TEnumAsByte<UnitData::EState> NewUnitState);|'Isn't this fun?'            |
+|TEnumAsByte<UnitData::EState> GetUnitState();       		|'Isn't this fun?'            |
+|float GetHealth();       					|'Isn't this fun?'            |
+|void SetHealth(float NewHealth);       			|'Isn't this fun?'            |
+|float GetMaxHealth();      					|'Isn't this fun?'            |
+|void SetSelected();       					|'Isn't this fun?'            |
+|void SetDeselected();      					|'Isn't this fun?'            |
+|void SpawnSelectedIcon();       				|'Isn't this fun?'            |
+
 
