@@ -66,7 +66,7 @@ Animations:
 - UnitBaseAnimInstance (Only used for linking UnitState to CharAnimState)
 
 Characters:
-- CameraBase
+- CameraBase ( A Small RTS Camera with cool responsive Camera-Jump)
 - UnitBase (This is the Key Element of this Product)
 
 Controller:
