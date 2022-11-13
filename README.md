@@ -217,27 +217,26 @@ Widget Setup
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|USceneComponent* RootScene;      				|'Isn't this fun?'            |
-|USpringArmComponent* SpringArm;				|-- is en-dash, --- is em-dash|
-|Rotator SpringArmRotator = FRotator(-50, 0, 0);     		|'Isn't this fun?'            |
-|UCameraComponent* CameraComp;          			|"Isn't this fun?"            |
-|APlayerController* PC;						|-- is en-dash, --- is em-dash|
-|int32 ScreenSizeX;						|-- is en-dash, --- is em-dash|
-|int32 ScreenSizeY;						|-- is en-dash, --- is em-dash|
-|float PitchValue = 0.f;					|-- is en-dash, --- is em-dash|
-|float YawValue = 0.f;						|-- is en-dash, --- is em-dash|
-|float RollValue = 0.f;						|-- is en-dash, --- is em-dash|
-|bool RollCamRight = false;					|-- is en-dash, --- is em-dash|
-|bool RollCamLeft = false;					|-- is en-dash, --- is em-dash|
-|bool ZoomCamOut = false;					|-- is en-dash, --- is em-dash|
-|bool ZoomCamIn = false;					|-- is en-dash, --- is em-dash|
-|bool ZoomCamOutToPosition = false;				|-- is en-dash, --- is em-dash|
-|bool MoveCamForward = false;					|-- is en-dash, --- is em-dash|
-|bool MoveCamBackward = false;					|-- is en-dash, --- is em-dash|
-|bool MoveCamLeft = false;					|-- is en-dash, --- is em-dash|
-|bool MoveCamRight = false;					|-- is en-dash, --- is em-dash|
-|float StartTime = 0.f;						|-- is en-dash, --- is em-dash|
-|int CamAngle = 0;						|-- is en-dash, --- is em-dash|
+|USceneComponent* RootScene;      				| Pointer to the RootScene     	|
+|USpringArmComponent* SpringArm;				| Pointer to the SpringArm 	|
+|Rotator SpringArmRotator = FRotator(-50, 0, 0);     		| Rotation of the SpringArm	|
+|UCameraComponent* CameraComp;          			| Pointer to the CameraComp     |
+|APlayerController* PC;						| Pointer to the PlayerController |
+|int32 ScreenSizeX;						| This is set by SetViewPortScreenSizes |
+|int32 ScreenSizeY;						| This is set by SetViewPortScreenSizes |
+|float PitchValue = 0.f;					| Used for Rolling Cam |
+|float YawValue = 0.f;						| Used for Rolling Cam |
+|float RollValue = 0.f;						| Used for Rolling Cam |
+|bool RollCamRight = false;					| Is set to Roll Cam in Tick|
+|bool RollCamLeft = false;					| Is set to Roll Cam in Tick|
+|bool ZoomCamOut = false;					| Is set to Zoom Cam in Tick|
+|bool ZoomCamIn = false;					| Is set to Zoom Cam in Tick|
+|bool ZoomCamOutToPosition = false;				| Is set to Zoom Cam to ZoomOutPosition in Tick|
+|bool MoveCamForward = false;					| Is set to Move Cam in Tick|
+|bool MoveCamBackward = false;					| Is set to Move Cam in Tick|
+|bool MoveCamLeft = false;					| Is set to Move Cam in Tick|
+|bool MoveCamRight = false;					| Is set to Move Cam in Tick|
+|int CamAngle = 0;						| Current Cam Angle|
 	
 |Functions (BlueprintCallable)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
