@@ -240,27 +240,27 @@ Widget Setup
 	
 |Functions (BlueprintCallable)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|void CreateCameraComp();       				|'Isn't this fun?'            |
-|void SetViewPortScreenSizes(int x);     			|'Isn't this fun?'            |
-|void SpawnControllWidget();       				|'Isn't this fun?'            |
-|FVector GetCameraPanDirection();       			|'Isn't this fun?'            |
-|void PanMoveCamera(const FVector& PanDirection);		|'Isn't this fun?'            |
-|void ZoomIn();      						|'Isn't this fun?'            |
-|void ZoomOut();    						|'Isn't this fun?'            |
-|void ZoomStop();      						|'Isn't this fun?'            |
-|void CamLeft();    						|'Isn't this fun?'            |
-|void CamRight();      						|'Isn't this fun?'            |
-|void CamStop();   						|'Isn't this fun?'            |
-|void CamRotationTick();      					|'Isn't this fun?'            |
-|void JumpCamera(FHitResult Hit);    				|'Isn't this fun?'            |
-|FVector2D GetMousePos2D();   					|'Isn't this fun?'            |
-|void Zoom();      						|'Isn't this fun?'            |
-|void ZoomOutToPosition();      				|'Isn't this fun?'            |
-|void CamMoveAndZoomTick();    					|'Isn't this fun?'            |
-|void ZoomInToPosition();     					|'Isn't this fun?'            |
-|void LockOnCharacter(ACharacter* SelectedActor);      		|'Isn't this fun?'            |
-|void HideControlWidget();      				|'Isn't this fun?'            |
-|void ShowControlWidget();     					|'Isn't this fun?'            |
+|void CreateCameraComp();       				| Is Creating the Camera      |
+|void SetViewPortScreenSizes(int x);     			| Sets ScreenSize X/>         |
+|void SpawnControllWidget();       				| Spawns the Control Widget   |
+|FVector GetCameraPanDirection();       			| Used in Tick to get Pandirection          |
+|void PanMoveCamera(const FVector& PanDirection);		| Move Camera via ScreenEdges            |
+|void ZoomIn();      						| Zoom In          |
+|void ZoomOut();    						| Zoom Out          |
+|void ZoomStop();      						| Zoom Stop            |
+|void CamLeft();    						| Move Cam Left          |
+|void CamRight();      						| Move Cam Right           |
+|void CamStop();   						| Stop Cam Move           |
+|void CamRotationTick();      					| Used in Tick to Rotate Cam            |
+|void JumpCamera(FHitResult Hit);    				| Jump Camera to Hit Location          |
+|FVector2D GetMousePos2D();   					| Get Mouse 2D Position          |
+|void Zoom();      						| Zoom Camera           |
+|void ZoomOutToPosition();      				| Zoom out to ZoomCamOutToPosition |
+|void CamMoveAndZoomTick();    					| Move and Zoom used in Tick          |
+|void ZoomInToPosition();     					| Zoom Back In           |
+|void LockOnUnit(AUnitBase* SelectedActor);      		| Lock Camera on a Unit          |
+|void HideControlWidget();      				| Sets the Control Widget Location        |
+|void ShowControlWidget();     					| Sets the Control Widget Hide Location           |
 |void SetUserWidget(APlayerController* PlayerController);      	|'Isn't this fun?'            |
 	
 	
@@ -268,28 +268,28 @@ Widget Setup
 
 |Properties (EditAnyWhere + BlueprintReadWrite)                  	|Note                         |
 |-----------------------------------------------------------------------|-----------------------------|
-|float SightRadius = 1500.0f;   					|'Isn't this fun?'            |
-|float SightAge = 5.0f;		         				|"Isn't this fun?"            |
-|float LoseSightRadius = SightRadius + 1000.0f;				|-- is en-dash, --- is em-dash|
-|float FieldOfView = 360.0f;		      				|'Isn't this fun?'            |
-|float DespawnTime = 1.0f;       					|"Isn't this fun?"            |
-|float PauseDuration = 0.6f;						|-- is en-dash, --- is em-dash|	
-|float AttackDuration = 0.6f;				      		|"Isn't this fun?"            |
-|float IsAttackedDuration = 0.3f;					|"Isn't this fun?"            |
-|float AttackAngleTolerance = 0.f;					|"Isn't this fun?"            |
+|float SightRadius = 1500.0f;   					| The Sight of the Unit should be higher then the Range! |
+|float SightAge = 5.0f;		         				| ---           |
+|float LoseSightRadius = SightRadius + 1000.0f;				| The Unit Loses Sight when LoseSightRadius is reached |
+|float FieldOfView = 360.0f;		      				| Field Of View in degre    |
+|float DespawnTime = 1.0f;       					| Despawn Time after Death           |
+|float PauseDuration = 0.6f;						| Time in UnitState Pause. Which is also CharAnimState (in Anim BP) |	
+|float AttackDuration = 0.6f;				      		| Time in UnitState Attack. Which is also CharAnimState (in Anim BP) |
+|float IsAttackedDuration = 0.3f;					| Time in UnitState IsAttacked. Which is also CharAnimState (in Anim BP)  |
+|float AttackAngleTolerance = 0.f;					| Set it higher to prevent shaking of the Unit. Especially when Unit is Big |
 
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|class UAISenseConfig_Sight* SightConfig;    			|'Isn't this fun?'            |
-|float DistanceToUnitToChase = 0.0f;				|-- is en-dash, --- is em-dash|
+|class UAISenseConfig_Sight* SightConfig;    			|---            |
+|float DistanceToUnitToChase = 0.0f;				|Current Distance to Unit to Chase |
 	
 |Functions (BlueprintCallable)                  				|Note                         |
 |-------------------------------------------------------------------------------|-----------------------------|
-|void KillUnitBase(AUnitBase* UnitBase);     					|'Isn't this fun?'            |
-|void OnUnitDetected(const TArray<AActor*>& DetectedUnits);     		|'Isn't this fun?'            |
-|void RotateToAttackUnit(AUnitBase* AttackingUnit, AUnitBase* UnitToAttack);  	|'Isn't this fun?'            |
-|void UnitControlStateMachine(float DeltaSeconds);  				|'Isn't this fun?'            |
+|void KillUnitBase(AUnitBase* UnitBase);     					| Kill the UnitBase           |
+|void OnUnitDetected(const TArray<AActor*>& DetectedUnits);     		| Is called when a Unit is detected. UnitToChase is set.  |
+|void RotateToAttackUnit(AUnitBase* AttackingUnit, AUnitBase* UnitToAttack);  	| Rotates the Unit to the Unit which will be Attacked.            |
+|void UnitControlStateMachine(float DeltaSeconds);  				| Is called in Tick          |
 	
 	
 # ControllerBase
