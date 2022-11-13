@@ -273,62 +273,25 @@ Widget Setup
 
 |Properties (EditAnyWhere)                  				|Note                         |
 |-----------------------------------------------------------------------|-----------------------------|
-|float Margin = 15;       						|'Isn't this fun?'            |
-|int GetViewPortScreenSizesState = 1;         				|"Isn't this fun?"            |
-|float CamSpeed = 80;							|-- is en-dash, --- is em-dash|
-|float ZoomOutPosition = 20000.f;       				|'Isn't this fun?'            |
-|float ZoomPosition = 1500.f;         					|"Isn't this fun?"            |
-|class UWidgetComponent* ControlWidgetComp;				|-- is en-dash, --- is em-dash|	
-|FRotator ControlWidgetRotation = FRotator(50, 180, 0);       		|"Isn't this fun?"            |
-|FVector ControlWidgetLocation = FVector(400.f, -100.0f, -250.0f);      |"Isn't this fun?"            |
-|FVector ControlWidgetHideLocation = FVector(400.f, -2500.0f, -250.0f); |"Isn't this fun?"            |
+|float SightRadius = 1500.0f;   					|'Isn't this fun?'            |
+|float SightAge = 5.0f;		         				|"Isn't this fun?"            |
+|float LoseSightRadius = SightRadius + 1000.0f;				|-- is en-dash, --- is em-dash|
+|float FieldOfView = 360.0f;		      				|'Isn't this fun?'            |
+|float DespawnTime = 1.0f;       					|"Isn't this fun?"            |
+|float PauseDuration = 0.6f;						|-- is en-dash, --- is em-dash|	
+|float AttackDuration = 0.6f;				      		|"Isn't this fun?"            |
+|float IsAttackedDuration = 0.3f;					|"Isn't this fun?"            |
+|float AttackAngleTolerance = 0.f;					|"Isn't this fun?"            |
 
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|USceneComponent* RootScene;      				|'Isn't this fun?'            |
-|USpringArmComponent* SpringArm;				|-- is en-dash, --- is em-dash|
-|Rotator SpringArmRotator = FRotator(-50, 0, 0);     		|'Isn't this fun?'            |
-|UCameraComponent* CameraComp;          			|"Isn't this fun?"            |
-|APlayerController* PC;						|-- is en-dash, --- is em-dash|
-|int32 ScreenSizeX;						|-- is en-dash, --- is em-dash|
-|int32 ScreenSizeY;						|-- is en-dash, --- is em-dash|
-|float PitchValue = 0.f;					|-- is en-dash, --- is em-dash|
-|float YawValue = 0.f;						|-- is en-dash, --- is em-dash|
-|float RollValue = 0.f;						|-- is en-dash, --- is em-dash|
-|bool RollCamRight = false;					|-- is en-dash, --- is em-dash|
-|bool RollCamLeft = false;					|-- is en-dash, --- is em-dash|
-|bool ZoomCamOut = false;					|-- is en-dash, --- is em-dash|
-|bool ZoomCamIn = false;					|-- is en-dash, --- is em-dash|
-|bool ZoomCamOutToPosition = false;				|-- is en-dash, --- is em-dash|
-|bool MoveCamForward = false;					|-- is en-dash, --- is em-dash|
-|bool MoveCamBackward = false;					|-- is en-dash, --- is em-dash|
-|bool MoveCamLeft = false;					|-- is en-dash, --- is em-dash|
-|bool MoveCamRight = false;					|-- is en-dash, --- is em-dash|
-|float StartTime = 0.f;						|-- is en-dash, --- is em-dash|
-|int CamAngle = 0;						|-- is en-dash, --- is em-dash|
+|class UAISenseConfig_Sight* SightConfig;    			|'Isn't this fun?'            |
+|float DistanceToUnitToChase = 0.0f;				|-- is en-dash, --- is em-dash|
 	
-|Functions (BlueprintCallable)                  		|Note                         |
-|---------------------------------------------------------------|-----------------------------|
-|void CreateCameraComp();       				|'Isn't this fun?'            |
-|void SetViewPortScreenSizes(int x);     			|'Isn't this fun?'            |
-|void SpawnControllWidget();       				|'Isn't this fun?'            |
-|FVector GetCameraPanDirection();       			|'Isn't this fun?'            |
-|void PanMoveCamera(const FVector& PanDirection);		|'Isn't this fun?'            |
-|void ZoomIn();      						|'Isn't this fun?'            |
-|void ZoomOut();    						|'Isn't this fun?'            |
-|void ZoomStop();      						|'Isn't this fun?'            |
-|void CamLeft();    						|'Isn't this fun?'            |
-|void CamRight();      						|'Isn't this fun?'            |
-|void CamStop();   						|'Isn't this fun?'            |
-|void CamRotationTick();      					|'Isn't this fun?'            |
-|void JumpCamera(FHitResult Hit);    				|'Isn't this fun?'            |
-|FVector2D GetMousePos2D();   					|'Isn't this fun?'            |
-|void Zoom();      						|'Isn't this fun?'            |
-|void ZoomOutToPosition();      				|'Isn't this fun?'            |
-|void CamMoveAndZoomTick();    					|'Isn't this fun?'            |
-|void ZoomInToPosition();     					|'Isn't this fun?'            |
-|void LockOnCharacter(ACharacter* SelectedActor);      		|'Isn't this fun?'            |
-|void HideControlWidget();      				|'Isn't this fun?'            |
-|void ShowControlWidget();     					|'Isn't this fun?'            |
-|void SetUserWidget(APlayerController* PlayerController);      	|'Isn't this fun?'            |
+|Functions (BlueprintCallable)                  				|Note                         |
+|-------------------------------------------------------------------------------|-----------------------------|
+|void KillUnitBase(AUnitBase* UnitBase);     					|'Isn't this fun?'            |
+|void OnUnitDetected(const TArray<AActor*>& DetectedUnits);     		|'Isn't this fun?'            |
+|void RotateToAttackUnit(AUnitBase* AttackingUnit, AUnitBase* UnitToAttack);  	|'Isn't this fun?'            |
+|void UnitControlStateMachine(float DeltaSeconds);  				|'Isn't this fun?'            |
