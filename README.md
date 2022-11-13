@@ -145,7 +145,7 @@ Widget Setup
 |None UMETA(DisplayName = "None"),    				|'Isn't this fun?'            |
 
 
-|Properties (EditAnyWhere)                  				|Note                         |
+|Properties (EditAnyWhere + BlueprintReadWrite)                  	|Note                         |
 |-----------------------------------------------------------------------|-----------------------------|
 |bool IsFriendly = true;         					|'Isn't this fun?'            |
 |float Range = 300.f;           					|"Isn't this fun?"            |
@@ -206,7 +206,7 @@ Widget Setup
 	
 # CameraBase
 
-|Properties (EditAnyWhere)                  				|Note                         |
+|Properties (EditAnyWhere + BlueprintReadWrite)                  	|Note                         |
 |-----------------------------------------------------------------------|-----------------------------|
 |float Margin = 15;       						|'Isn't this fun?'            |
 |int GetViewPortScreenSizesState = 1;         				|"Isn't this fun?"            |
@@ -271,7 +271,7 @@ Widget Setup
 	
 # UnitControllerBase
 
-|Properties (EditAnyWhere)                  				|Note                         |
+|Properties (EditAnyWhere + BlueprintReadWrite)                  	|Note                         |
 |-----------------------------------------------------------------------|-----------------------------|
 |float SightRadius = 1500.0f;   					|'Isn't this fun?'            |
 |float SightAge = 5.0f;		         				|"Isn't this fun?"            |
