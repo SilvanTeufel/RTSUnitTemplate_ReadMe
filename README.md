@@ -129,31 +129,42 @@ Widget Setup
 5. Widget Class has to choose a Blueprint (in the Character BP). Or just use the Parent Class like it is.
 
 
-|ASCII                          				|HTML                         |
+# UnitBase
+|Properties (EditAnyWhere)                  				|HTML                         |
+|-----------------------------------------------------------------------|-----------------------------|
+|bool IsFriendly = true;         					|'Isn't this fun?'            |
+|float Range = 300.f;           					|"Isn't this fun?"            |
+|float StopChaseAtDistance = 100.f;					|-- is en-dash, --- is em-dash|
+|float MaxRunSpeed = 400.f;        					|'Isn't this fun?'            |
+|float IsAttackedSpeed = 200.f;          				|"Isn't this fun?"            |
+|float RunSpeedScale = 4.f;						|-- is en-dash, --- is em-dash|
+|float StopRunTolerance = 100.f;       					|'Isn't this fun?'            |
+|float StopRunToleranceY = 400.f;           				|"Isn't this fun?"            |
+|float StopChaseAtDistance = 100.f;					|-- is en-dash, --- is em-dash|
+|float AttackDamage = 40.0f;          					|"Isn't this fun?"            |
+|class AWaypoint* NextWaypoint;       					|'Isn't this fun?'            |
+|TEnumAsByte<UnitData::EState> UnitState = UnitData::Idle;		|-- is en-dash, --- is em-dash|
+|TEnumAsByte<UnitData::EState> UnitStatePlaceholder = UnitData::Patrol;	|-- is en-dash, --- is em-dash|
+|float Range = 300.f;           					|"Isn't this fun?"            |
+|float StopChaseAtDistance = 100.f;				|-- is en-dash, --- is em-dash|
+|bool IsFriendly = true;         		|'Isn't this fun?'            |
+|float Range = 300.f;           		|"Isn't this fun?"            |
+|float StopChaseAtDistance = 100.f;		|-- is en-dash, --- is em-dash|
+|bool IsFriendly = true;         		|'Isn't this fun?'            |
+|float Range = 300.f;           		|"Isn't this fun?"            |
+|float StopChaseAtDistance = 100.f;		|-- is en-dash, --- is em-dash|
+
+
+|Properties (BlueprintReadWrite)                  		|HTML                         |
 |---------------------------------------------------------------|-----------------------------|
-|bool IsFriendly = true;         				|'Isn't this fun?'            |
-|float Range = 300.f;           				|"Isn't this fun?"            |
-|float StopChaseAtDistance = 100.f;				|-- is en-dash, --- is em-dash|
-|float MaxRunSpeed = 400.f;        				|'Isn't this fun?'            |
-|float IsAttackedSpeed = 200.f;          			|"Isn't this fun?"            |
-|float RunSpeedScale = 4.f;					|-- is en-dash, --- is em-dash|
-|float StopRunTolerance = 100.f;       				|'Isn't this fun?'            |
-|float StopRunToleranceY = 400.f;           			|"Isn't this fun?"            |
-|float StopChaseAtDistance = 100.f;				|-- is en-dash, --- is em-dash|
 |float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|float AttackDamage = 40.0f;          				|"Isn't this fun?"            |
 |bool ToggleUnitDetection = false;				|-- is en-dash, --- is em-dash|
-|bool IsFriendly = true;         				|'Isn't this fun?'            |
-|float Range = 300.f;           				|"Isn't this fun?"            |
-|float StopChaseAtDistance = 100.f;		|-- is en-dash, --- is em-dash|
-|bool IsFriendly = true;         		|'Isn't this fun?'            |
-|float Range = 300.f;           		|"Isn't this fun?"            |
-|float StopChaseAtDistance = 100.f;		|-- is en-dash, --- is em-dash|
-|bool IsFriendly = true;         		|'Isn't this fun?'            |
-|float Range = 300.f;           		|"Isn't this fun?"            |
-|float StopChaseAtDistance = 100.f;		|-- is en-dash, --- is em-dash|
-|bool IsFriendly = true;         		|'Isn't this fun?'            |
-|float Range = 300.f;           		|"Isn't this fun?"            |
-|float StopChaseAtDistance = 100.f;		|-- is en-dash, --- is em-dash|
+|AUnitBase* UnitToChase;       					|'Isn't this fun?'            |
+|TArray <AUnitBase*> UnitsToChase;          			|"Isn't this fun?"            |
+|float DistanceToUnitToChase;					|-- is en-dash, --- is em-dash|
+|float DistanceToUnitToChase;					|-- is en-dash, --- is em-dash|
+|float DistanceToUnitToChase;					|-- is en-dash, --- is em-dash|
+|float DistanceToUnitToChase;					|-- is en-dash, --- is em-dash|
+|float DistanceToUnitToChase;					|-- is en-dash, --- is em-dash|
 
 
