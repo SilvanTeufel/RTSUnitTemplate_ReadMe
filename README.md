@@ -159,50 +159,47 @@ Widget Setup
 |class AWaypoint* NextWaypoint;       					| The Start Waypoint when Unit is in "Patrol"	        	|
 |TEnumAsByte<UnitData::EState> UnitState = UnitData::Idle;		| Choose the Start UnitState. For Enemys it should be Patrol	|
 |TEnumAsByte<UnitData::EState> UnitStatePlaceholder = UnitData::Patrol;	| This is used to Switch the UnitState back from other States	|
-|class UWidgetComponent* HealthWidgetComp;          			| Used for Healthbar Implementation.            |
-|float StopChaseAtDistance = 100.f;					|-- is en-dash, --- is em-dash|
-|float MaxHealth = 120;       						|'Isn't this fun?'            |
-|FVector HealthWidgetCompLocation = FVector (0.f, 0.f, 180.f);          |"Isn't this fun?"            |
-|TSubclassOf<class AProjectile> ProjectileBaseClass;			|-- is en-dash, --- is em-dash|
-|bool UseProjectile = false;      					|'Isn't this fun?'            |
-|FVector ProjectileSpawnOffset = FVector(0.f,0.f,0.f);          	|"Isn't this fun?"            |
-|float ProjectileScaleActorDirectionOffset = 50.f;			|-- is en-dash, --- is em-dash|
-|float ProjectileSpeed = 50.f;						|-- is en-dash, --- is em-dash|
-|FVector ProjectileScale = FVector(1.f,1.f,1.f);			|-- is en-dash, --- is em-dash|
-|bool DestroyAfterDeath = true;						|-- is en-dash, --- is em-dash|	
+|class UWidgetComponent* HealthWidgetComp;          			| Used for Healthbar Implementation.           			|
+|float MaxHealth = 120;       						| MaxHealth of the Character. Use it to change MaxHealth        |
+|FVector HealthWidgetCompLocation = FVector (0.f, 0.f, 180.f);          | Location of the Healthbar realtive to the Character		|
+|TSubclassOf<class AProjectile> ProjectileBaseClass;			| Choose a ProjectileBaseClass if you want to use a Projectile	|
+|bool UseProjectile = false;      					| Set to true if you want to use a Projectile		        |
+|FVector ProjectileSpawnOffset = FVector(0.f,0.f,0.f);          	| Offset Realtive to the Unit for the Spawn of the Projectile 	|
+|float ProjectileScaleActorDirectionOffset = 50.f;			| Offset in Actor Direction (to Spawn infront of Weapon)	|
+|float ProjectileSpeed = 50.f;						| Chosse the Speed of the Projectile				|
+|FVector ProjectileScale = FVector(1.f,1.f,1.f);			| Choose the Size of the Projectile				|
+|bool DestroyAfterDeath = true;						| True if Units should despawn after Death.			|	
 	
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|float UnitControlTimer = 0.0f;        				|'Isn't this fun?'            |
-|bool ToggleUnitDetection = false;				|-- is en-dash, --- is em-dash|
-|AUnitBase* UnitToChase;       					|'Isn't this fun?'            |
-|TArray <AUnitBase*> UnitsToChase;          			|"Isn't this fun?"            |
-|float Health;							|-- is en-dash, --- is em-dash|
-|TArray <FVector> RunLocationArray;				|-- is en-dash, --- is em-dash|
-|int32 RunLocationArrayIterator;				|-- is en-dash, --- is em-dash|
-|FVector RunLocation;						|-- is en-dash, --- is em-dash|
-|class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
-|class AProjectile* Projectile;				|-- is en-dash, --- is em-dash|
-|class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
-|class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
-|class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
+|float UnitControlTimer = 0.0f;        				| Used in UnitControllerBase Statemachine            |
+|bool ToggleUnitDetection = false;				| Is Used in ControllerBase to toggle unit to Attack |
+|AUnitBase* UnitToChase;       					| Is set to the Unit which should be attacked        |
+|TArray <AUnitBase*> UnitsToChase;          			| Array of all available Units		             |
+|float Health;							| Current Health of the Unit			     |
+|TArray <FVector> RunLocationArray;				| Used for MoveThroughWaypoints in the HUD	     |
+|int32 RunLocationArrayIterator;				| Used for the Iteration of the Array		     |
+|FVector RunLocation;						| Is the Location where the Unit should Run. Used in "Run"|
+|class ASelectedIcon* SelectedIcon;				| The Icon is Hidden when Character is not selected|
+|class AProjectile* Projectile;					| The Current Projectile|
 	
 |Functions (BlueprintCallable)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|void IsAttacked(AActor* AttackingCharacter);       		|'Isn't this fun?'            |
-|void SetWalkSpeed(float Speed);      				|'Isn't this fun?'            |
-|bool SetNextUnitToChase();        				|'Isn't this fun?'            |
-|void SetWaypoint(class AWaypoint* NewNextWaypoint);        	|'Isn't this fun?'            |
-|void SetUnitState( TEnumAsByte<UnitData::EState> NewUnitState);|'Isn't this fun?'            |
-|TEnumAsByte<UnitData::EState> GetUnitState();       		|'Isn't this fun?'            |
-|float GetHealth();       					|'Isn't this fun?'            |
-|void SetHealth(float NewHealth);       			|'Isn't this fun?'            |
-|float GetMaxHealth();      					|'Isn't this fun?'            |
-|void SetSelected();       					|'Isn't this fun?'            |
-|void SetDeselected();      					|'Isn't this fun?'            |
-|void SpawnSelectedIcon();       				|'Isn't this fun?'            |
+|void IsAttacked(AActor* AttackingCharacter);       		| Gets called when Unit is attacked. Called in UnitControllerBase |
+|void SetWalkSpeed(float Speed);      				| Set Max Walkspeed           |
+|bool SetNextUnitToChase();        				| Chooses UnitToChase from UnitsToChase (closest unit is choosen) |
+|void SetWaypoint(class AWaypoint* NewNextWaypoint);        	| Sets the new Waypoint. Unit walks to Waypoint in State "Patrol" |
+|void SetUnitState( TEnumAsByte<UnitData::EState> NewUnitState);| Used to Set the State of the Unit (UnitControllerBase->UnitControlStateMachine) |
+|TEnumAsByte<UnitData::EState> GetUnitState();       		| Get the current Unit State          		|
+|float GetHealth();       					| Get current health of the Unit          	|
+|void SetHealth(float NewHealth);       			| Set current health of the Unit         	|
+|float GetMaxHealth();      					| Get max health of the Unit            	|
+|void SetSelected();       					| Sets the SelectedIcon selected           	|
+|void SetDeselected();      					| Sets the SelectedIcon delected            	|
+|void SpawnSelectedIcon();       				| Spawns the SelectedIcon         		|	
 	
+
 # CameraBase
 
 |Properties (EditAnyWhere + BlueprintReadWrite)                  	|Note                         |
