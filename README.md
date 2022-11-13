@@ -145,15 +145,18 @@ Widget Setup
 |class AWaypoint* NextWaypoint;       					|'Isn't this fun?'            |
 |TEnumAsByte<UnitData::EState> UnitState = UnitData::Idle;		|-- is en-dash, --- is em-dash|
 |TEnumAsByte<UnitData::EState> UnitStatePlaceholder = UnitData::Patrol;	|-- is en-dash, --- is em-dash|
-|float Range = 300.f;           					|"Isn't this fun?"            |
-|float StopChaseAtDistance = 100.f;				|-- is en-dash, --- is em-dash|
-|bool IsFriendly = true;         		|'Isn't this fun?'            |
-|float Range = 300.f;           		|"Isn't this fun?"            |
-|float StopChaseAtDistance = 100.f;		|-- is en-dash, --- is em-dash|
-|bool IsFriendly = true;         		|'Isn't this fun?'            |
-|float Range = 300.f;           		|"Isn't this fun?"            |
-|float StopChaseAtDistance = 100.f;		|-- is en-dash, --- is em-dash|
-
+|class UWidgetComponent* HealthWidgetComp;          			|"Isn't this fun?"            |
+|float StopChaseAtDistance = 100.f;					|-- is en-dash, --- is em-dash|
+|float MaxHealth = 120;       						|'Isn't this fun?'            |
+|FVector HealthWidgetCompLocation = FVector (0.f, 0.f, 180.f);          |"Isn't this fun?"            |
+|TSubclassOf<class AProjectile> ProjectileBaseClass;			|-- is en-dash, --- is em-dash|
+|bool UseProjectile = false;      					|'Isn't this fun?'            |
+|FVector ProjectileSpawnOffset = FVector(0.f,0.f,0.f);          	|"Isn't this fun?"            |
+|float ProjectileScaleActorDirectionOffset = 50.f;			|-- is en-dash, --- is em-dash|
+|float ProjectileSpeed = 50.f;						|-- is en-dash, --- is em-dash|
+|FVector ProjectileScale = FVector(1.f,1.f,1.f);			|-- is en-dash, --- is em-dash|
+|bool DestroyAfterDeath = true;						|-- is en-dash, --- is em-dash|	
+	
 
 |Properties (BlueprintReadWrite)                  		|HTML                         |
 |---------------------------------------------------------------|-----------------------------|
@@ -161,10 +164,13 @@ Widget Setup
 |bool ToggleUnitDetection = false;				|-- is en-dash, --- is em-dash|
 |AUnitBase* UnitToChase;       					|'Isn't this fun?'            |
 |TArray <AUnitBase*> UnitsToChase;          			|"Isn't this fun?"            |
-|float DistanceToUnitToChase;					|-- is en-dash, --- is em-dash|
-|float DistanceToUnitToChase;					|-- is en-dash, --- is em-dash|
-|float DistanceToUnitToChase;					|-- is en-dash, --- is em-dash|
-|float DistanceToUnitToChase;					|-- is en-dash, --- is em-dash|
-|float DistanceToUnitToChase;					|-- is en-dash, --- is em-dash|
-
+|float Health;							|-- is en-dash, --- is em-dash|
+|TArray <FVector> RunLocationArray;				|-- is en-dash, --- is em-dash|
+|int32 RunLocationArrayIterator;				|-- is en-dash, --- is em-dash|
+|FVector RunLocation;						|-- is en-dash, --- is em-dash|
+|class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
+|class AProjectile* Projectile;				|-- is en-dash, --- is em-dash|
+|class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
+|class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
+|class ASelectedIcon* SelectedIcon;				|-- is en-dash, --- is em-dash|
 
