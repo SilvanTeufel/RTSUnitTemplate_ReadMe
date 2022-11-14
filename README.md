@@ -28,13 +28,14 @@ Search for SwarmSimulator and put a check mark at it.
 
 ## Import Settings
 
-RTSUnitTemplate/Document/Inputs/Gameplay_Debugger_Backup_2022-11-02_080527_RTSUnitTemplate.ini
-RTSUnitTemplate/Document/Inputs/Input_Backup_2022-11-01_200303_RTSUnitTemplate.ini
-RTSUnitTemplate/Document/Inputs/Maps_&_Modes_Backup_2022-11-02_074806_RTSUnitTemplate.ini
+RTSUnitTemplate/Document/Description_Backup_2022-11-14_102425_RTSUnitTemplate.ini
+RTSUnitTemplate/Document/Gameplay_Debugger_Backup_2022-11-14_102535_RTSUnitTemplate.ini
+RTSUnitTemplate/Document/Input_Backup_2022-11-14_102458_RTSUnitTemplate.ini
+RTSUnitTemplate/Document/Maps_&_Modes_Backup_2022-11-14_102333_RTSUnitTemplate.ini
 
-__You can download Gameplay_Debugger_Backup_2022-11-02_080527_RTSUnitTemplate.ini and Input_Backup_2022-11-01_200303_RTSUnitTemplate.ini and Maps_&_Modes_Backup_2022-11-02_074806_RTSUnitTemplate.ini from here from github by clicking on top left Code->Download Zip__
+__You can download these files also here from github by clicking on top left Code->Download Zip__
 
-Open Unreal Editor. Go to Edit -> Project Settings -> Search for the Specific Input Section: Gameplay Debugger, Input, Maps & Modes
+Open Unreal Editor. Go to Edit -> Project Settings -> Search for the Specific Input Section: Gameplay Debugger, Input, Maps & Modes, Settings (For Description)
 and import the .ini file
 
 You can also find the .ini files in the Plugin Folder "All\Engine\Plugins\SwarmSimulator\Document\Input
