@@ -87,7 +87,7 @@ For ControllerBase, if you want to use the Controller, you have to adapt your Se
 ---
 
 Here is a List of the Classes and there Functions:
-(All Variables and Functions are accessible via Blueprint - BlueprintReadWrite or EditAnywhere or Both.)
+(All Variables and Functions are accessible via Blueprint - BlueprintReadWrite or EditAnywhere (so editable in Details Panel) or Both.)
 
 ## Create a Blueprint from Parent Classes
 
