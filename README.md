@@ -65,7 +65,7 @@ Actors:
 - Waypoint
 
 Animations:
-- UnitBaseAnimInstance (Only used for linking UnitState to CharAnimState)
+- UnitBaseAnimInstance ( Usable with Blenspaces via DataTable )
 
 Characters:
 - CameraBase ( A Small RTS Camera with cool responsive Camera-Jump)
