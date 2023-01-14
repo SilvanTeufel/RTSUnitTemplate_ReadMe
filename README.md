@@ -57,6 +57,24 @@ and import the .ini file
 
 You can also find the .ini files in the Plugin Folder "All\Engine\Plugins\SwarmSimulator\Document\Input
 
+## Enhanced Keyboard Settings
+
+You can Change Inputs at: All\Engine\Plugins\TopDownRTSCamLib\Content\Blueprints\Controls
+
+For GameplayTags you have to set AssetMangerClass in ProjectSettings (Restart Project after change):
+
+![image](https://user-images.githubusercontent.com/45244380/211891213-c16b45c3-25d7-4af2-bb5c-d4aeb124ceec.png)
+
+Go to ProjectSettings->Input and set EnhancedIputComponentBase:
+
+![image](https://user-images.githubusercontent.com/45244380/211891263-032cfbc6-120c-40f3-82f6-b1d7cff938a3.png)
+
+YOu can set MappingContext and ControlAsset in the BP_CameraBase:
+
+![image](https://user-images.githubusercontent.com/45244380/212332329-42eaec24-7096-4728-8c8a-ede7846c0efc.png)
+
+![image](https://user-images.githubusercontent.com/45244380/212332385-9137f8ed-212e-4c99-bcb5-def35dd7160b.png)
+
 ## Test Example Map
 
 Open Unreal Editor. Open folder (In Unreal Editor folder tab):
