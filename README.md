@@ -3,22 +3,22 @@ Copyright 2022 Silvan Teufel / Teufel-Engineering.com All Rights Reserved.
 # RTS Unit Template - Readme - 2022
 ### Create your own RTS Units !
 
-CTRL + E -- Rotate Cam Right (works also when Cam is locked to Unit )
-CTRL + Q - Rotate Cam Left (works also when Cam is locked to Unit )
-CTRL + Left Mouse Click -- Move Cam to Mouse Position
-CTRL + W -- Zoom Cam In
-CTRL + S -- Zoom Cam Out
-CTRL + HOLD SPACE -- Fast Zoom Out to Position
-CTRL + SPACE + Left Mouse - Move Cam to Mouse Position
-Mouse to Screen Edges -- Move Cam to Mouse Position
-Right Click when Unit Selected -- Move Unit
-Shift + Right Click when Char. Sel. -- Move Unit through Waypoints
-CTRL + G when Unit Selected -- Lock Unit on Character
-CTRL + T when Unit Selected -- Switch to Third Person Mode
-Press A when Character Selected - toggle Attack
-Press A + Left Click when Character Selected - Move to Position and Attack
-Press A + Left Click on Enemy - Focus this Enemy
-HOLD TAB -- Show Control-Widget
+- CTRL + E -- Rotate Cam Right (works also when Cam is locked to Unit )
+- CTRL + Q - Rotate Cam Left (works also when Cam is locked to Unit )
+- CTRL + Left Mouse Click -- Move Cam to Mouse Position
+- CTRL + W -- Zoom Cam In
+- CTRL + S -- Zoom Cam Out
+- CTRL + HOLD SPACE -- Fast Zoom Out to Position
+- CTRL + SPACE + Left Mouse - Move Cam to Mouse Position
+- Mouse to Screen Edges -- Move Cam to Mouse Position
+- Right Click when Unit Selected -- Move Unit
+- Shift + Right Click when Char. Sel. -- Move Unit through Waypoints
+- CTRL + G when Unit Selected -- Lock Unit on Character
+- CTRL + T when Unit Selected -- Switch to Third Person Mode
+- Press A when Character Selected - toggle Attack
+- Press A + Left Click when Character Selected - Move to Position and Attack
+- Press A + Left Click on Enemy - Focus this Enemy
+- HOLD TAB -- Show Control-Widget
 
 Gameplay Preview: https://www.youtube.com/watch?v=ESS5PYtr9mU
 
