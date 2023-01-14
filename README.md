@@ -20,7 +20,7 @@ Press A + Left Click when Character Selected - Move to Position and Attack
 Press A + Left Click on Enemy - Focus this Enemy
 HOLD TAB -- Show Control-Widget
 
-Gameplay Preview:
+Gameplay Preview: https://www.youtube.com/watch?v=ESS5PYtr9mU
 
 For Questions you can write to info@teufel-engineering.com
 If you find any Issues or Bugs i appreciate your Mail.
