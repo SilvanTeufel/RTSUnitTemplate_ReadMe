@@ -116,9 +116,6 @@ Hud:
 Widgets:
 - UnitBaseHealthBar
 
-
-For ControllerBase, if you want to use the Controller, you have to adapt your Settings (Pictures in "Document/Inputs" Folder), or "Import Keyboard Settings" (topic above).
-
 ---
 
 Here is a List of the Classes and there Functions:
