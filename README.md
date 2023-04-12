@@ -164,6 +164,7 @@ Widget Setup
 5. Widget Class has to choose a Blueprint (in the Character BP). Or just use the Parent Class like it is.
 
 
+## Setup your Animations.
 1. Create a Blueprint from the AnimInstance
 ![image](https://user-images.githubusercontent.com/45244380/231446938-cd8fedc7-2a66-45aa-9380-0a861954280e.png)
 2. You have to create a Animation Blueprint 
