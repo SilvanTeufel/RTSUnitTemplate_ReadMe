@@ -166,19 +166,25 @@ Widget Setup
 
 ## Setup your Animations.
 1. Create a Blueprint from the AnimInstance
+
 ![image](https://user-images.githubusercontent.com/45244380/231446938-cd8fedc7-2a66-45aa-9380-0a861954280e.png)
-2. You have to create a Animation Blueprint 
+
+2. You have to create a Animation Blueprint
+
 ![image](https://user-images.githubusercontent.com/45244380/231446957-9c4b98b0-74fb-4301-921b-10db7547ff21.png)
+
 3. Choose your Skeleton and my Class (preferbly as Blueprint)
+
 ![image](https://user-images.githubusercontent.com/45244380/231447011-28cccbfa-a304-4eee-95da-db6513183e9c.png)
-4.
-Setting up a DataTable
+
+4. Setting up a DataTable
 I have an Example DataTable. But the DataTable is Design for use with a 2D-Blendspace.
+
 Miscellaneous->DataTable
 
-DTUnitAnimData:
-
 ![image](https://user-images.githubusercontent.com/45244380/231447039-7248ca38-3867-4695-ab12-081d469495bf.png)
+
+DTUnitAnimData:
 
 ![image](https://user-images.githubusercontent.com/45244380/231447180-56df60ff-37e9-4a1a-baf2-11c0dc493e61.png)
 
