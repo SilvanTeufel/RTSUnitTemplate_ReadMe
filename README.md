@@ -164,6 +164,44 @@ Widget Setup
 5. Widget Class has to choose a Blueprint (in the Character BP). Or just use the Parent Class like it is.
 
 
+1. Create a Blueprint from the AnimInstance
+![image](https://user-images.githubusercontent.com/45244380/231446938-cd8fedc7-2a66-45aa-9380-0a861954280e.png)
+2. You have to create a Animation Blueprint 
+![image](https://user-images.githubusercontent.com/45244380/231446957-9c4b98b0-74fb-4301-921b-10db7547ff21.png)
+3. Choose your Skeleton and my Class (preferbly as Blueprint)
+![image](https://user-images.githubusercontent.com/45244380/231447011-28cccbfa-a304-4eee-95da-db6513183e9c.png)
+4.
+Setting up a DataTable
+I have an Example DataTable. But the DataTable is Design for use with a 2D-Blendspace.
+Miscellaneous->DataTable
+
+DTUnitAnimData:
+
+![image](https://user-images.githubusercontent.com/45244380/231447039-7248ca38-3867-4695-ab12-081d469495bf.png)
+
+![image](https://user-images.githubusercontent.com/45244380/231447180-56df60ff-37e9-4a1a-baf2-11c0dc493e61.png)
+
+The Table is chosen in the in Animation Blueprint:
+
+![image](https://user-images.githubusercontent.com/45244380/231447516-035da2ff-0a81-4712-a12d-a53182a12ad6.png)
+
+I have created example Blendspaces:
+
+![image](https://user-images.githubusercontent.com/45244380/231447497-1563a2ce-2032-4636-b0d1-6337ffc73fe0.png)
+
+
+And in the State General I use the Blendspace for all other States:
+
+![image](https://user-images.githubusercontent.com/45244380/231447436-5b6d6ff2-2649-4d6f-906e-19abc78ce714.png)
+
+The StateMachine:
+
+![image](https://user-images.githubusercontent.com/45244380/231447408-3610e3dc-7dc1-4b42-886c-0b426f2b3210.png)
+
+The Custom State can just be a Animation Output:
+
+![image](https://user-images.githubusercontent.com/45244380/231447352-1bf7f3a6-b4fd-407c-a6ee-0d4b34c2c69c.png)
+
 # UnitBase
 
 |UnitStates (The Statemachine is in UnitControllerBase)        	|Note                         |
